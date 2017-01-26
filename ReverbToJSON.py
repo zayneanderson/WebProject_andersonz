@@ -19,12 +19,12 @@ soupReverb = BeautifulSoup(pageReverb.content, 'lxml')
 # 'position' marks the beginning of each news brief in the html
 # All other data is found in its relationship to 'position'
 for position in soupReverb.find_all('li', class_='card-grid_item'):
-    price = position.find('div', class_="product-card__price").string
-    condition = position.find('div', class_="product-condition__price").string
+    price = position.find('div', class_="product-card__price")
+    condition = position.find('div', class_="product-condition__price")
+    style = position.find('h4', class_="product-card-body-sized")
 
     # Make changes to response for APNewsBriefs
-    response.append({'price' : price, 'condition' : condition})
-
+    response.append({'price' : price, 'condition' : condition, 'style' : style})
 # Write response to JSON file
 postingsFile = today + '.Reverb.json'
 
