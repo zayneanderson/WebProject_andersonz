@@ -1,1 +1,0 @@
-schtasks /Create /SC DAILY /TN "Test" /TR "C:\Users\Zayne\Desktop\CSC3130\hello.bat" /ST 15:00

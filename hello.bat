@@ -1,3 +1,1 @@
-echo 'Hello'
-pause
-echo 'Hello Again'
+C:\Users\Zayne\Anaconda3\python.exe C:\Users\Zayne\Desktop\CSC3130\WebProject_andersonz\SeleniumParseSW.py

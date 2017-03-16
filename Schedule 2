@@ -1,3 +1,0 @@
-schtasks /Create /SC DAILY /TN "SWTest" /TR "\Users\Zayne\CSC3130\Reverb.bat" /ST 15:00
-
-
