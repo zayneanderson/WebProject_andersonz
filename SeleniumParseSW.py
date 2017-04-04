@@ -41,3 +41,8 @@ with open(postingsFile, 'w') as outfile:
     json.dump(response, outfile, sort_keys=True, indent=2)
 
 outfile.close()
+
+# seperate by guitar type
+#how many of each guitar in each price range and seperated by brand
+#price range and rating
+#rating based on brand
